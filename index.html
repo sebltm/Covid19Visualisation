@@ -135,8 +135,8 @@
 
         // CREATE STACKED AREA CHART
         var firstRun = true;
-        var xScale = d3.scaleTime().domain([startDate, endDate]).range([0, chartWidth / 2])
-        var yScale = d3.scaleLinear().domain([0, 1]).range([chartHeight / 2, 0])
+        var xScale = d3.scaleTime().domain([startDate, endDate]).range([0, $("#graph_svg").width()])
+        var yScale = d3.scaleLinear().domain([0, 1]).range([$("#graph_svg").height(), 0])
 
         var stackData = [];
         for (i = 0; i < b117.ltlas.length; i++) {
