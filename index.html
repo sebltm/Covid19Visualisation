@@ -153,8 +153,6 @@
             }
         }
 
-        console.log(stackData)
-
         stacked_chart();
 
         // CREATE SLIDER
@@ -302,7 +300,7 @@
 
             xAxis = g => g
                 .attr("transform", "translate(0," + $("#graph_svg").outerHeight() + ")")
-                .call(d3.axisBottom(xScale).ticks(chartWidth / 80).tickSizeOuter(0))
+                .call(d3.axisBottom(xScale).ticks(6).tickSizeOuter(0))
 
             yAxis = g => g
                 .attr("transform", `translate(${margin.left}px,0)`)
